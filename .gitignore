@@ -44,7 +44,11 @@ desktop.ini
 .cache/
 *.pkl
 *.h5
-# 注意:models/ 下的预训练模型需要保留,不在此忽略
+# 模型文件需要部署
+!code/models/*.pkl
+!code/models/*.json
+!code/models/*.pth
+!code/models/*.pt
 
 # Streamlit 运行时
 .streamlit/cache/

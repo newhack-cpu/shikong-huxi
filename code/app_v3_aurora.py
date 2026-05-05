@@ -8,8 +8,12 @@ import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 import joblib, json, os
 from datetime import datetime, timedelta
+from pathlib import Path
 import warnings
 warnings.filterwarnings('ignore')
+
+# Streamlit Cloud 从仓库根目录运行，cd 到脚本所在目录确保相对路径正确
+os.chdir(Path(__file__).parent)
 
 # ═══════════════════════════════════════════════════════════════
 # §1  工具函数

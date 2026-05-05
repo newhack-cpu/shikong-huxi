@@ -1,0 +1,50 @@
+# ═══════════════════════════════════════════════════════════════
+# 时空呼吸 v3.5 · .gitignore
+# ═══════════════════════════════════════════════════════════════
+
+# ⚠️ 敏感信息 — 绝对不能提交
+.streamlit/secrets.toml
+.streamlit/credentials.toml
+.env
+.env.local
+.env.*.local
+*.toml.bak
+*.toml.backup
+
+# IDE 历史(可能含密钥)
+.history/
+.vscode/.history/
+.idea/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# 虚拟环境
+venv/
+env/
+.venv/
+ENV/
+
+# 系统文件
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 大文件 / 缓存
+*.log
+*.tmp
+.cache/
+*.pkl
+*.h5
+# 注意:models/ 下的预训练模型需要保留,不在此忽略
+
+# Streamlit 运行时
+.streamlit/cache/
